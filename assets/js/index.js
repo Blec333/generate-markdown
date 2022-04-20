@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require("fs");
-const fileName = 'generated-readme.md'
+const readmeFile = 'generated-readme.md'
 const license = {
     //Apache
     0: {
@@ -172,78 +172,92 @@ function genLicList() {
 }
 genLicList();
 
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, `${data}\n`, (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
+}
+
+function appendToFile(fileName, data) {
+    fs.appendFile(fileName, `${data}\n`, (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
+}
+
 const questions = [
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      message: 'What is the title of your project?',
-      name: 'title'
-    },
-    {
-      type: 'input',
-      message: 'Please describe your project.',
-      name: 'description'
-    },
-    {
-      type: 'input',
-      message: 'Please add your installation instructions.',
-      name: 'installation'
-    },
-    {
-      type: 'input',
-      message: 'Please describe how to use your application.',
-      name: 'usage'
-    },
-    {
-      type: 'input',
-      message: 'Please explain how others are meant to contribute to your project.',
-      name: 'contribution'
-    },
-    {
-      type: 'input',
-      message: 'Please explain how to test your application.',
-      name: 'tests'
-    },
-    {
-      type: 'list',
-      message: 'Please choose from the provided list of licenses',
-      name: 'license',
-      choices: licenseList
-    }
-  ])
-  .then((response) => {
-    console.log(response);
-    // response.confirm === response.password
-    console.log(response.title);
-    console.log(response.description);
-    console.log(response.installation);
-    console.log(response.usage);
-    console.log(response.contribution);
-    console.log(response.tests);
-    console.log(response.license);
-    console.log('hello');
-    
-writeToFile('generated-readme.md', response.title);
-  }
-  )
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                message: 'What is the title of your project?',
+                name: 'title'
+            },
+            {
+                type: 'input',
+                message: 'Please describe your project.',
+                name: 'description'
+            },
+            {
+                type: 'input',
+                message: 'Please add your installation instructions.',
+                name: 'installation'
+            },
+            {
+                type: 'input',
+                message: 'Please describe how to use your application.',
+                name: 'usage'
+            },
+            {
+                type: 'input',
+                message: 'Please explain how others are meant to contribute to your project.',
+                name: 'contribution'
+            },
+            {
+                type: 'input',
+                message: 'Please explain how to test your application.',
+                name: 'tests'
+            },
+            {
+                type: 'list',
+                message: 'Please choose from the provided list of licenses',
+                name: 'license',
+                choices: licenseList
+            }
+        ])
+        .then((response) => {
+            console.log(response);
+            console.log(response.title);
+            console.log(response.description);
+            console.log(response.installation);
+            console.log(response.usage);
+            console.log(response.contribution);
+            console.log(response.tests);
+            console.log(response.license);
+
+            writeToFile(readmeFile, `# ${response.title}\n`);
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, '## Description\n');
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, `${response.description}\n`);
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, '## Installation\n');
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, '## Usage\n');
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, '## Contribution\n');
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, '## Tests\n');
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, '## License\n');
+            appendToFile(readmeFile, '\n');
+        }
+        )
 ]
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-fs.writeFile(fileName, `${data}\n`, (err) =>
-  err ? console.error(err) : console.log('Success!')
-);
-}
-function appendToFile(fileName, data) {
-    fs.appendFile(fileName, `${data}\n`, (err) =>
-      err ? console.error(err) : console.log('Success!')
-    );
-    }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() { }
 
 // Function call to initialize app
 // init();
