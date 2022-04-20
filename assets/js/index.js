@@ -233,23 +233,40 @@ const questions = [
             console.log(response.contribution);
             console.log(response.tests);
             console.log(response.license);
+            console.log(licenseList.indexOf(response.license));
 
-            writeToFile(readmeFile, `# ${response.title}\n`);
+            let badge = response.license[licenseList.indexOf(response.license)].badge;
+            let link = response.license[licenseList.indexOf(response.license)].link;
+
+            writeToFile(readmeFile, `# ${response.title}`);
             appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Description\n');
+            appendToFile(readmeFile, `<img title="badge" alt="badge" src="${badge}"/>`);
             appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, `${response.description}\n`);
+            appendToFile(readmeFile, '## Description');
             appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Installation\n');
+            appendToFile(readmeFile, `${response.description}`);
             appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Usage\n');
+            appendToFile(readmeFile, '## Installation');
             appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Contribution\n');
+            appendToFile(readmeFile, `${response.installation}`);
             appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Tests\n');
+            appendToFile(readmeFile, '## Usage');
             appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## License\n');
+            appendToFile(readmeFile, `${response.usage}`);
             appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, '## Contribution');
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, `${response.contribution}`);
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, '## Tests');
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, `${response.tests}`);
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, '## License');
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, `${response.license}`);
+            appendToFile(readmeFile, '\n');
+            appendToFile(readmeFile, `${response.license[licenseList.indexOf(response.license)].link}`);
         }
         )
 ]
