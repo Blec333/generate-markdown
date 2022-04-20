@@ -6,24 +6,24 @@ const license = {
     0: {
         name: 'Apache 2.0 License',
         badge: 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
-        link: 'https://opensource.org/licenses/Apache-2.0)'
+        link: 'https://opensource.org/licenses/Apache-2.0'
     },
     //Boost
     1: {
         name: 'Boost Software License 1.0',
         badge: 'https://img.shields.io/badge/License-Boost_1.0-lightblue.svg',
-        link: 'https://www.boost.org/LICENSE_1_0.txt)'
+        link: 'https://www.boost.org/LICENSE_1_0.txt'
     },
     //BSD
     2: {
         name: 'BSD 3-Clause License',
         badge: 'https://img.shields.io/badge/License-BSD_3--Clause-blue.svg',
-        link: 'https://opensource.org/licenses/BSD-3-Clause)'
+        link: 'https://opensource.org/licenses/BSD-3-Clause'
     },
     3: {
         name: 'BSD 2-Clause License',
         badge: 'https://img.shields.io/badge/License-BSD_2--Clause-orange.svg',
-        link: 'https://opensource.org/licenses/BSD-2-Clause)'
+        link: 'https://opensource.org/licenses/BSD-2-Clause'
     },
     //Creative Commons
     4: {
@@ -34,44 +34,44 @@ const license = {
     5: {
         name: 'Attribution 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg',
-        link: 'https://creativecommons.org/licenses/by/4.0/)'
+        link: 'https://creativecommons.org/licenses/by/4.0/'
     },
     6: {
         name: 'Attribution-ShareAlike 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg',
-        link: 'https://creativecommons.org/licenses/by-sa/4.0/)'
+        link: 'https://creativecommons.org/licenses/by-sa/4.0/'
     },
     7: {
         name: 'Attribution-NonCommercial 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg',
-        link: 'https://creativecommons.org/licenses/by-nc/4.0/)'
+        link: 'https://creativecommons.org/licenses/by-nc/4.0/'
     },
     8: {
         name: 'Attribution-NoDerivates 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY--ND_4.0-lightgrey.svg',
-        link: 'https://creativecommons.org/licenses/by-nd/4.0/)'
+        link: 'https://creativecommons.org/licenses/by-nd/4.0/'
     },
     9: {
         name: 'Attribution-NonCommmercial-ShareAlike 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg',
-        link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/)'
+        link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
     },
     10: {
         name: 'Attribution-NonCommercial-NoDerivatives 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg',
-        link: 'https://creativecommons.org/licenses/by-nc-nd/4.0/)'
+        link: 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
     },
     //Eclipse
     11: {
         name: 'Eclipse Public License 1.0',
         badge: 'https://img.shields.io/badge/License-EPL_1.0-red.svg',
-        link: 'https://opensource.org/licenses/EPL-1.0)'
+        link: 'https://opensource.org/licenses/EPL-1.0'
     },
     //GNU
     12: {
         name: 'GNU GPL v3',
         badge: 'https://img.shields.io/badge/License-GPLv3-blue.svg',
-        link: 'https://www.gnu.org/licenses/gpl-3.0)'
+        link: 'https://www.gnu.org/licenses/gpl-3.0'
     },
     13: {
         name: 'GNU GPL v2',
@@ -81,28 +81,28 @@ const license = {
     14: {
         name: 'GNU AGPL v3',
         badge: 'https://img.shields.io/badge/License-AGPL_v3-blue.svg',
-        link: 'https://www.gnu.org/licenses/agpl-3.0)'
+        link: 'https://www.gnu.org/licenses/agpl-3.0'
     },
     15: {
         name: 'GNU LGPL v3',
         badge: 'https://img.shields.io/badge/License-LGPL_v3-blue.svg',
-        link: 'https://www.gnu.org/licenses/lgpl-3.0)'
+        link: 'https://www.gnu.org/licenses/lgpl-3.0'
     },
     16: {
         name: 'GNU FDL v1.3',
         badge: 'https://img.shields.io/badge/License-FDL_v1.3-blue.svg',
-        link: 'https://www.gnu.org/licenses/fdl-1.3)'
+        link: 'https://www.gnu.org/licenses/fdl-1.3'
     },
     //The Organization for Ethical Source
     17: {
         name: 'The Hippocratic License 2.1',
         badge: 'https://img.shields.io/badge/License-Hippocratic_2.1-lightgrey.svg',
-        link: 'https://firstdonoharm.dev)'
+        link: 'https://firstdonoharm.dev'
     },
     18: {
         name: 'The Hippocratic License 3.0',
         badge: 'https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg',
-        link: 'https://firstdonoharm.dev)'
+        link: 'https://firstdonoharm.dev'
     },
     //IBM
     19: {
@@ -114,19 +114,19 @@ const license = {
     20: {
         name: 'ISC License (ISC)',
         badge: 'https://img.shields.io/badge/License-ISC-blue.svg',
-        link: 'https://opensource.org/licenses/ISC)'
+        link: 'https://opensource.org/licenses/ISC'
     },
     //MIT
     21: {
         name: 'The MIT License',
         badge: 'https://img.shields.io/badge/License-MIT-yellow.svg',
-        link: 'https://opensource.org/licenses/MIT)'
+        link: 'https://opensource.org/licenses/MIT'
     },
     //Mozilla
     22: {
         name: 'Mozilla Public License 2.0',
         badge: 'https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg',
-        link: 'https://opensource.org/licenses/MPL-2.0)'
+        link: 'https://opensource.org/licenses/MPL-2.0'
     },
     //Open Data Commons
     23: {
@@ -235,38 +235,38 @@ const questions = [
             console.log(response.license);
             console.log(licenseList.indexOf(response.license));
 
-            let badge = response.license[licenseList.indexOf(response.license)].badge;
-            let link = response.license[licenseList.indexOf(response.license)].link;
+            let badge = license[licenseList.indexOf(response.license)].badge;
+            let link = license[licenseList.indexOf(response.license)].link;
 
-            writeToFile(readmeFile, `# ${response.title}`);
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, `<img title="badge" alt="badge" src="${badge}"/>`);
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Description');
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, `${response.description}`);
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Installation');
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, `${response.installation}`);
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Usage');
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, `${response.usage}`);
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Contribution');
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, `${response.contribution}`);
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## Tests');
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, `${response.tests}`);
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, '## License');
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, `${response.license}`);
-            appendToFile(readmeFile, '\n');
-            appendToFile(readmeFile, `${response.license[licenseList.indexOf(response.license)].link}`);
+            writeToFile(readmeFile, `# ${response.title}
+            \n
+            <img title="badge" alt="badge" src="${badge}"/>
+            \n
+            ## Description
+            \n
+            ${response.description}
+            \n
+            ## Installation
+            \n
+            ${response.installation}
+            \n
+            ## Usage
+            \n
+            ${response.usage}
+            \n
+            ## Contribution
+            \n
+            ${response.contribution}
+            \n
+            ## Tests
+            \n
+            ${response.tests}
+            \n
+            ## License
+            \n
+            ${response.license}
+            \n
+            ${link}`)
         }
         )
 ]
