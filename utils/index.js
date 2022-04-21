@@ -6,56 +6,61 @@ const genMD = require("./generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 const licenseOptions = [
+    {
+        name: 'No License',
+        badge: '',
+        link: ''
+    },
     //Apache
-{
+    {
         name: 'Apache 2.0 License',
         badge: 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
         link: 'https://opensource.org/licenses/Apache-2.0'
     },
     //Boost
-{
+    {
         name: 'Boost Software License 1.0',
         badge: 'https://img.shields.io/badge/License-Boost_1.0-lightblue.svg',
         link: 'https://www.boost.org/LICENSE_1_0.txt'
     },
     //BSD
-{
+    {
         name: 'BSD 3-Clause License',
         badge: 'https://img.shields.io/badge/License-BSD_3--Clause-blue.svg',
         link: 'https://opensource.org/licenses/BSD-3-Clause'
     },
-{
+    {
         name: 'BSD 2-Clause License',
         badge: 'https://img.shields.io/badge/License-BSD_2--Clause-orange.svg',
         link: 'https://opensource.org/licenses/BSD-2-Clause'
     },
     //Creative Commons
-{
+    {
         name: 'CC0-1.0',
         badge: 'https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg',
         link: 'http://creativecommons.org/publicdomain/zero/1.0/'
     },
-{
+    {
         name: 'Attribution 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg',
         link: 'https://creativecommons.org/licenses/by/4.0/'
     },
-{
+    {
         name: 'Attribution-ShareAlike 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg',
         link: 'https://creativecommons.org/licenses/by-sa/4.0/'
     },
-{
+    {
         name: 'Attribution-NonCommercial 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg',
         link: 'https://creativecommons.org/licenses/by-nc/4.0/'
     },
-{
+    {
         name: 'Attribution-NoDerivates 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY--ND_4.0-lightgrey.svg',
         link: 'https://creativecommons.org/licenses/by-nd/4.0/'
     },
-{
+    {
         name: 'Attribution-NonCommmercial-ShareAlike 4.0 International',
         badge: 'https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg',
         link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
@@ -166,7 +171,7 @@ const licenseOptions = [
         badge: 'https://img.shields.io/badge/License-Zlib-lightgrey.svg',
         link: 'https://opensource.org/licenses/Zlib'
     }
-]
+];
 
     // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -177,7 +182,7 @@ function writeToFile(fileName, data) {
 console.log(licenseOptions.length);
 function askQuestions() {
     var listOfLicenses = [];
-    for (let i = 0; i < Object.keys(licenseOptions).length; i++) {
+    for (let i = 0; i < licenseOptions.length; i++) {
         listOfLicenses.push(licenseOptions[i].name);
     }
     const questions = [
