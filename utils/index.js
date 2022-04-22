@@ -179,7 +179,18 @@ function writeToFile(fileName, data) {
         err ? console.error(err) : console.log('Success!')
     );
 }
-console.log(licenseOptions.length);
+
+
+
+// var listOfLicenses = [];
+// for (let i = 0; i < licenseOptions.length; i++) {
+//     listOfLicenses.push(licenseOptions[i].name);
+// }
+// console.log(licenseOptions[listOfLicenses.indexOf('No License')].badge);
+
+
+
+
 function askQuestions() {
     var listOfLicenses = [];
     for (let i = 0; i < licenseOptions.length; i++) {
@@ -227,10 +238,10 @@ function askQuestions() {
             ])
             .then((response) => {
                 const readmeFile = 'generated-readme.md';
-                let chosenLicense = genMD.renderLicenseSection(response.license);
+                let chosenLicense = genMD.renderLicenseSection(listOfLicenses, response.license);
                 let badge = genMD.renderLicenseBadge(licenseOptions, listOfLicenses, chosenLicense);
                 let link = genMD.renderLicenseLink(licenseOptions, listOfLicenses, chosenLicense);
-                let markdownText = genMD.generateMarkdown(readmeFile, response, badge, link);
+                let markdownText = genMD.generateMarkdown(readmeFile, response, chosenLicense, badge, link);
                 writeToFile(readmeFile, markdownText);
             }
             )
@@ -243,6 +254,6 @@ function askQuestions() {
     }
     
     // Function call to initialize app
-    // init();
+    init();
     
     
