@@ -1,4 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(licenseObj, listOfLicenses, licenseChoice) {
   if (licenseChoice != '') {
@@ -8,7 +7,6 @@ function renderLicenseBadge(licenseObj, listOfLicenses, licenseChoice) {
   }
 }
 
-// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(licenseObj, listOfLicenses, licenseChoice) {
   if (licenseChoice != '') {
@@ -18,7 +16,6 @@ function renderLicenseLink(licenseObj, listOfLicenses, licenseChoice) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(listOfLicenses, licenseChoice) {
   if (licenseChoice != 'No License') {
@@ -28,39 +25,51 @@ function renderLicenseSection(listOfLicenses, licenseChoice) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(fileName, data, license, badge, link) {
-
-  let writeString = 
-  `# ${data.title}
-  \n
-  ${badge}
-  \n
-  ## Description
-  \n
-  ${data.description}
-  \n
-  ## Installation
-  \n
-  ${data.installation}
-  \n
-  ## Usage
-  \n
-  ${data.usage}
-  \n
-  ## Contribution
-  \n
-  ${data.contribution}
-  \n
-  ## Tests
-  \n
-  ${data.tests}
-  \n
-  ## License
-  \n
-  ${license}
-  \n
-  ${link}`;
+let writeString = 
+`# ${data.title}
+\n
+${badge}
+\n
+## Description
+\n
+${data.description}
+\n
+## Table of Contents
+\n
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributions](#contributions)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
+\n
+## Installation
+\n
+${data.installation}
+\n
+## Usage
+\n
+${data.usage}
+\n
+## Contribution
+\n
+${data.contribution}
+\n
+## Tests
+\n
+${data.tests}
+\n
+## License
+\n
+${license}
+${link}
+\n
+## Questions
+\n
+Please visit my GitHub profile here: https://github.com/${data.github}
+If you have any questions, please feel free to [contact me here](mailto:${data.email}). -- [${data.email}]`;
 
   return writeString;
 }

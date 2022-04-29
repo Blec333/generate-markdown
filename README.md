@@ -1,6 +1,7 @@
 # Common text title
 
 Repository Name: generate-markdown
+<img title="badge" alt="badge" src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
 
 ## Description 
 
@@ -12,40 +13,55 @@ This project constructs a readme.md file by writing user input from the terminal
             .prompt([
                 {
                     type: 'input',
-                    message: 'What is the title of your project?',
+                    message: 'What would you like to name your readme file?',// name the file
+                    name: 'fileName'
+                },
+                {
+                    type: 'input',
+                    message: 'What is the title of your project?',// title of my project
                     name: 'title'
                 },
                 {
                     type: 'input',
-                    message: 'Please describe your project.',
+                    message: 'Please describe your project.',// Description
                     name: 'description'
                 },
                 {
                     type: 'input',
-                    message: 'Please add your installation instructions.',
+                    message: 'Please add your installation instructions.',// Installation
                     name: 'installation'
                 },
                 {
                     type: 'input',
-                    message: 'Please describe how to use your application.',
+                    message: 'Please describe how to use your application.',// Usage
                     name: 'usage'
                 },
                 {
                     type: 'input',
-                    message: 'Please explain how others are meant to contribute to your project.',
+                    message: 'Please explain how others are meant to contribute to your project.',// Contributing
                     name: 'contribution'
                 },
                 {
                     type: 'input',
-                    message: 'Please explain how to test your application.',
+                    message: 'Please explain how to test your application.',// Tests
                     name: 'tests'
                 },
                 {
                     type: 'list',
-                    message: 'Please choose from the provided list of licenses',
+                    message: 'Please choose from the provided list of licenses',// License
                     name: 'license',
                     choices: listOfLicenses
-                }
+                },
+                {
+                    type: 'input',
+                    message: 'What is your GitHub username?',// Questions
+                    name: 'github'
+                },
+                {
+                    type: 'input',
+                    message: 'What is your email address?',// Questions
+                    name: 'email'
+                },
             ])
 ```
 
@@ -54,14 +70,17 @@ This project constructs a readme.md file by writing user input from the terminal
 Technologies used on this project include:
 * Javascript
 * Node.JS
-* NPM Inquirer & FS (& custom module exports)
+* NPM Inquirer & FS (with module exports)
 
 
 ## Table of Contents (Optional)
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Final Product](#finalproduct)
+* [Final Product](#final-product)
+* [Video](#video)
+* [License](#license)
+* [Acknowledgements](#acknowledgements)
 
 ## Installation
 
@@ -78,7 +97,7 @@ To begin using this site after insstall requirements:
 
 ## Final Product
 
-<img title="image" alt="Style Showcase Page Screenshot" src="./assets/images/image1.jpg">
+<img title="image" alt="Style Showcase Page Screenshot" src="./docs/image1.jpg">
 
 
 
@@ -88,7 +107,7 @@ https://github.com/Blec333/generate-markdown
 
 ## Video
 
-[![Video](./assets/images/performance.gif)](https://drive.google.com/open?id=1zYRgi7fHBNVysP9sRmMibwGhw_arHON6&authuser=bleclair3%40gmail.com&usp=drive_fs "Video")
+[![Video](./docs/performance.gif)](https://drive.google.com/open?id=1zYRgi7fHBNVysP9sRmMibwGhw_arHON6&authuser=bleclair3%40gmail.com&usp=drive_fs "Video")
 
 https://drive.google.com/open?id=1zYRgi7fHBNVysP9sRmMibwGhw_arHON6&authuser=bleclair3%40gmail.com&usp=drive_fs
 
