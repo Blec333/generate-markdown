@@ -1,4 +1,4 @@
-# Common text title
+# Readme Generator
 
 Repository Name: generate-markdown
 <img title="badge" alt="badge" src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
